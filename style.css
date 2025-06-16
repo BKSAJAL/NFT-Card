@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  background-color: #0d192e;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Outfit", sans-serif;
+  font-size: 14px;
+}
+
+.card__ctn {
+  background-color: #0c182d;
+  max-width: 350px;
+  height: fit-content;
+  padding: 1rem 1rem 0rem 1rem;
+  border-radius: 50px;
+}
+
+.card {
+  background-color: #15263f;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.card__images {
+  position: relative;
+}
+
+.card__images:hover {
+  cursor: pointer;
+}
+
+.card__images-layer {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.card__images:hover .card__images-layer {
+  display: block;
+  width: 2rem;
+}
+
+.card__title {
+  margin: 1rem 0rem;
+  color: #fdffff;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.card__desc {
+  color: #8eacd8;
+}
+
+.card__time {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0rem;
+}
+
+.card__time-left {
+  display: flex;
+  gap: 0.5rem;
+  color: #00fefb;
+}
+
+.card__time-right {
+  display: flex;
+  gap: 0.5rem;
+  color: #8eacd8;
+}
+
+.card__divider {
+  border-bottom: 1px solid #8eacd8;
+  margin-bottom: 1rem;
+}
+
+.card__creator {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #8eacd8;
+  margin-bottom: 0.5rem;
+}
+
+.card__creator img {
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  border: 1px solid white;
+}
+
+.card__creator span {
+  color: #fdffff;
+}
+
+.attribution {
+  margin-top: 1rem;
+  color: #8eacd8;
+  font-size: 13px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #00fefb;
+}
