@@ -15,9 +15,9 @@
     <title>NFT Card</title>
   </head>
   <body>
-    <main class="main">
+    <div class="main">
       <div class="card__ctn">
-        <div class="card">
+        <main class="card">
           <div class="card__images">
             <img
               width="100%"
@@ -26,40 +26,47 @@
               alt="img-eth"
             />
             <img
-              class="card__images-layer"             
+              class="card__images-layer"
               src="./assets/icon-view.svg"
               alt="icon-view"
             />
           </div>
-          <p class="card__title">Equilibrium #3429</p>
-          <p class="card__desc">
-            Our Equilibrium collection promotes balance and calm.
-          </p>
+
+          <div class="card__title">
+            <h1>Equilibrium #3429</h1>
+          </div>
+          <p id="info">Our Equilibrium collection promotes balance and calm.</p>
           <div class="card__time">
             <div class="card__time-left">
               <img src="./assets/icon-ethereum.svg" alt="icon-eth" />
-              <p>0.041ETH</p>
+              <span>0.041 ETH</span>
             </div>
             <div class="card__time-right">
               <img src="./assets/icon-clock.svg" alt="icon-clock" />
-              <p>3 days left</p>
+              <span>3 days left</span>
             </div>
           </div>
 
           <div class="card__divider"></div>
 
           <div class="card__creator">
-            <img src="./assets/logo.jpeg" alt="logo" />
+            <img
+              src="./assets/logo.jpeg"
+              alt="logo"
+            />
             <p>Creation of <span>Sajal Bansal</span></p>
           </div>
-        </div>
+        </main>
 
-        <div class="attribution">
-          Challenge by <a target="_blank" href="https://www.crio.do">Crio.do</a> Coded by
-          <a target="_blank" href="https://github.com/BKSAJAL/NFT-Card">Sajal Bansal</a>
-        </div>
+        <footer class="attribution">
+          Challenge by
+          <a target="_blank" href="https://www.crio.do">Crio.do</a> Coded by
+          <a target="_blank" href="https://www.github.com/BKSAJAL"
+            >Sajal Bansal</a
+          >
+        </footer>
       </div>
-    </main>
+    </div>
   </body>
 </html>
 
